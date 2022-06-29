@@ -58,6 +58,14 @@ void MLIRGenerator::createLuaStringSturct() {
   varStruct.setBody(fields, false);
 }
 
+mlir::LLVM::LLVMStructType MLIRGenerator::getLuaStringSturct() {
+  auto context = module->getContext();
+  context->getOrLoadDialect<mlir::LLVM::LLVMDialect>();
+  // struct LuaString {}
+  return mlir::LLVM::LLVMStructType::getIdentified(context, "struct.LuaString");
+
+}
+
 // set the runtime struct
 void MLIRGenerator::addLuacBaseType() {
   createLuaVarSturct();
@@ -90,40 +98,80 @@ mlir::Value MLIRGenerator::getOrCreateGlobalString(llvm::StringRef name, llvm::S
         globalPtr, llvm::ArrayRef<mlir::Value>({cst0, cst0}));
   }
 
-
-void MLIRGenerator::enterChunk(LuaParser::ChunkContext* ctx) {
-  std::cout << "enter a chunk" << std::endl;
-  addLuacBaseType();
-  // create main function
+void MLIRGenerator::createMainFunction() {
   llvm::SmallVector<mlir::Type, 4> args;
-
   auto retType = mlir::IntegerType::get(module->getContext(), 32);
   auto func = mlir::LLVM::lookupOrCreateFn(module, "main", args, retType);
   auto entryBlock = func.addEntryBlock();
   builder.setInsertionPointToStart(entryBlock);
 }
 
-void MLIRGenerator::exitChunk(LuaParser::ChunkContext* ctx) {
-  // return main function
+void MLIRGenerator::endMainFunction() {
   auto res = builder.create<mlir::arith::ConstantIntOp>(loc(0, 0), 0,
                                                         builder.getI32Type());
   builder.create<mlir::LLVM::ReturnOp>(loc(0, 0), res.getResult());
 }
 
-void MLIRGenerator::enterFunctioncall(LuaParser::FunctioncallContext* ctx) {
-  std::cout << "enter function call" << std::endl;
+std::any MLIRGenerator::visitChunk(LuaParser::ChunkContext* ctx) {
+  //std::cout << "enter a chunk" << std::endl;
+  
+  addLuacBaseType();
+  
+  //std::cout << "end chunk" << std::endl;
+
+  createMainFunction();
+  visitBlock(ctx->block());
+  endMainFunction();
+  return 0;
+  //std::cout << "end chunk" << std::endl;
+}
+
+std::any MLIRGenerator::visitBlock(LuaParser::BlockContext * ctx){
+  std::cout << "enter a block" << std::endl;
+  visitChildren(ctx);
+  return 0;
+  //visit(ctx->)
+}
+    
+
+
+mlir::LLVM::LLVMFuncOp MLIRGenerator::getFunction(llvm::StringRef name) {
+  auto item = functionMap.find(name);
+  if(item == functionMap.end()) {
+    if(name == "print") {
+       auto strStruct = getLuaStringSturct();
+  
   llvm::SmallVector<mlir::Type> params;
-  auto strStruct = mlir::LLVM::LLVMStructType::getIdentified(
-      module.getContext(), "struct.LuaString");
   params.push_back( strStruct);
   
-  auto funcOp = mlir::LLVM::lookupOrCreateFn(
+  return mlir::LLVM::lookupOrCreateFn(
       module, "print", params, mlir::LLVM::LLVMVoidType::get(module->getContext()));
+    }
+  }
+
+   return nullptr;
+}
+
+std::any MLIRGenerator::visitFunctioncall(LuaParser::FunctioncallContext* ctx) {
+
+  std::cout << "enter function call" << std::endl;
+  llvm::SmallVector<mlir::Type> params;
+  std::string funcName = ctx->varOrExp()->var_()->getText();
+  auto funcOp = getFunction(funcName);
+  if(funcOp == nullptr) { // function not exist
+    return 0;
+  }
+  /**
+  for(auto arg = ctx->nameAndArgs()) {
+    std::cout << arg << std::endl;
+  }
+  */
+ // visit Args 
   auto helloStr = getOrCreateGlobalString("hello", "hello");
 
   auto zero = builder.create<mlir::LLVM::ConstantOp>(loc(0,0), builder.getI32Type(), builder.getI32IntegerAttr(0)); 
   auto one = builder.create<mlir::LLVM::ConstantOp>(loc(0,0), builder.getI32Type(), builder.getI32IntegerAttr(1));
-   
+  auto strStruct = getLuaStringSturct(); 
   mlir::Value strInstance = builder.create<mlir::LLVM::UndefOp>(loc(0,0), strStruct);
 
   auto ptrToNs = helloStr;//builder.create<mlir::LLVM::AddressOfOp>(loc(0,0), helloStr);
@@ -138,10 +186,11 @@ void MLIRGenerator::enterFunctioncall(LuaParser::FunctioncallContext* ctx) {
   
   //auto s = builder.create<mlir::LLVM::AddressOfOp>(loc(0,0), mlir::ValueRange{strInstance});
   builder.create<mlir::LLVM::CallOp>(loc(0,0), funcOp, mlir::ValueRange{strInstance});
+  return 0;
 }
-void MLIRGenerator::exitFunctioncall(LuaParser::FunctioncallContext* ctx) {}
 
-void MLIRGenerator::enterFuncname(LuaParser::FuncnameContext* ctx) {
+/*
+void MLIRGenerator::visitFuncname(LuaParser::FuncnameContext* ctx) {
   std::cout << "enter into a function declear" << ctx->getStart()->getText()
             << std::endl;
   llvm::ScopedHashTableScope<llvm::StringRef, mlir::Value> varScope(
@@ -171,7 +220,7 @@ void MLIRGenerator::exitFuncname(LuaParser::FuncnameContext* ctx) {
                                                         builder.getI64Type());
   builder.create<mlir::func::ReturnOp>(loc(0, 0), res.getResult());
 }
-
+*/
 void MLIRGenerator::dumpMLIR() {
   if (mlir::failed(mlir::verify(module))) {
     module.emitError("module verification error");
