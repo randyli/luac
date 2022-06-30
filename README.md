@@ -2,11 +2,17 @@
 
 A test project to use mlir. It compile the lua code to a exe, and run with a `c` runtime.
 
+(:bangbang:) This project is developing, do not try to use it. 
+
 ## Plan
 
-* hello world,  print("hello world")
-* compile a function.
-* generate some gpu operation.
+* ~~ hello world,  print("hello world") ~~
+* ~~ compile the function first ~~
+* ~~ callee parameter list ~~
+* ~~ function call parameter check ~~
+* ~~ compile a function. ~~
+* ~~ generate some gpu operation. ~~
+* add ast and sematic analysis
 
 
 ## llvm compile tips 
