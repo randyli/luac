@@ -37,6 +37,14 @@ void MLIRGenerator::gen() {
   createLuaVarSturct();
   createLuaStringSturct();
   createMainFunction();
+  for (int i = 0; i < ast->stats.size(); i++){
+    Stat* stat = ast->stats[i].get();
+    if (typeid(*stat) == typeid(FunctionCall)){
+      //
+      std::cout << "function call" << std::endl;
+      genFunctioncall(dynamic_cast<FunctionCall*>(stat));
+    }
+  }
   endMainFunction();
 }
 
@@ -132,18 +140,14 @@ mlir::LLVM::LLVMFuncOp MLIRGenerator::getFunction(llvm::StringRef name) {
    return nullptr;
 }
 
-std::any MLIRGenerator::visitFunctioncall(LuaParser::FunctioncallContext* ctx) {
+std::any MLIRGenerator::genFunctioncall(FunctionCall* funcCall) {
 
   std::cout << "enter function call" << std::endl;
   llvm::SmallVector<mlir::Type> params;
-  std::string funcName = ctx->varOrExp()->var_()->getText();
-  auto funcOp = getFunction(funcName);
+  
+  auto funcOp = getFunction(funcCall->name);
   if(funcOp == nullptr) { // function not exist
     return 0;
-  }
-  
-  for(auto arg : ctx->nameAndArgs()) {
-    visitNameAndArgs(arg);
   }
   
  // visit Args 

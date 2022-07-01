@@ -30,7 +30,7 @@ public:
 private:
 
     std::any visitBlock(LuaParser::BlockContext *ctx);
-    std::any visitFunctioncall(LuaParser::FunctioncallContext * ctx);  
+    std::any genFunctioncall(FunctionCall* funcCall);  
     std::any visitNameAndArgs(LuaParser::NameAndArgsContext* ctx);
 
     mlir::Location loc(unsigned int line, unsigned int column) {

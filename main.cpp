@@ -42,7 +42,6 @@ int main(int argc, char* argv[]) {
   std::unique_ptr<luac::AstContext> ast = sema.Ast();
   luac::MLIRGenerator generator(luac::Context::genMLIRContext().release(), ast.get());
   generator.gen();
-  // generator.visitChunk(ast);
   generator.dumpMLIR();
   generator.dumpIR();
 
