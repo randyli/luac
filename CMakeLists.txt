@@ -77,6 +77,7 @@ add_llvm_executable(luac
   main.cpp
   context.cpp 
   mlir_generator.cpp
+  sema.cpp
   ${antlr4cpp_src_files_luac}
 )
 

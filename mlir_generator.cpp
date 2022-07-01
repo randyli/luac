@@ -29,8 +29,15 @@
 
 namespace luac {
 
-MLIRGenerator::MLIRGenerator(mlir::MLIRContext* context) : builder(context) {
+MLIRGenerator::MLIRGenerator(mlir::MLIRContext* context, AstContext* ast) : builder(context), ast(ast) {
   module = builder.create<mlir::ModuleOp>(loc(0, 0));
+}
+
+void MLIRGenerator::gen() {
+  createLuaVarSturct();
+  createLuaStringSturct();
+  createMainFunction();
+  endMainFunction();
 }
 
 void MLIRGenerator::createLuaVarSturct() {
@@ -64,12 +71,6 @@ mlir::LLVM::LLVMStructType MLIRGenerator::getLuaStringSturct() {
   // struct LuaString {}
   return mlir::LLVM::LLVMStructType::getIdentified(context, "struct.LuaString");
 
-}
-
-// set the runtime struct
-void MLIRGenerator::addLuacBaseType() {
-  createLuaVarSturct();
-  createLuaStringSturct();
 }
 
 
@@ -111,27 +112,6 @@ void MLIRGenerator::endMainFunction() {
                                                         builder.getI32Type());
   builder.create<mlir::LLVM::ReturnOp>(loc(0, 0), res.getResult());
 }
-
-std::any MLIRGenerator::visitChunk(LuaParser::ChunkContext* ctx) {
-  //std::cout << "enter a chunk" << std::endl;
-  
-  addLuacBaseType();
-  
-  //std::cout << "end chunk" << std::endl;
-
-  createMainFunction();
-  visitBlock(ctx->block());
-  endMainFunction();
-  return 0;
-  //std::cout << "end chunk" << std::endl;
-}
-
-std::any MLIRGenerator::visitBlock(LuaParser::BlockContext * ctx){
-  std::cout << "enter a block" << std::endl;
-  visitChildren(ctx);
-  return 0;
-  //visit(ctx->)
-}
     
 
 
@@ -161,11 +141,11 @@ std::any MLIRGenerator::visitFunctioncall(LuaParser::FunctioncallContext* ctx) {
   if(funcOp == nullptr) { // function not exist
     return 0;
   }
-  /**
-  for(auto arg = ctx->nameAndArgs()) {
-    std::cout << arg << std::endl;
+  
+  for(auto arg : ctx->nameAndArgs()) {
+    visitNameAndArgs(arg);
   }
-  */
+  
  // visit Args 
   auto helloStr = getOrCreateGlobalString("hello", "hello");
 
@@ -187,6 +167,9 @@ std::any MLIRGenerator::visitFunctioncall(LuaParser::FunctioncallContext* ctx) {
   //auto s = builder.create<mlir::LLVM::AddressOfOp>(loc(0,0), mlir::ValueRange{strInstance});
   builder.create<mlir::LLVM::CallOp>(loc(0,0), funcOp, mlir::ValueRange{strInstance});
   return 0;
+}
+std::any MLIRGenerator::visitNameAndArgs(LuaParser::NameAndArgsContext* ctx) {
+
 }
 
 /*

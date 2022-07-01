@@ -6,7 +6,7 @@ A test project to use mlir. It compile the lua code to a exe, and run with a `c`
 
 ## Plan
 
-* ~~ hello world,  print("hello world") ~~
+* <del> hello world,  print("hello world")  </del>
 * ~~ compile the function first ~~
 * ~~ callee parameter list ~~
 * ~~ function call parameter check ~~

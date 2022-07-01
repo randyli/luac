@@ -15,20 +15,25 @@
 
 #include "LuaBaseVisitor.h"
 
+#include "ast.h"
+
 namespace luac {
 
-class MLIRGenerator : public LuaBaseVisitor {
+class MLIRGenerator {
 public:
-    MLIRGenerator(mlir::MLIRContext* context);
-    std::any visitChunk(LuaParser::ChunkContext *ctx) override;
-    std::any visitBlock(LuaParser::BlockContext *ctx) override;
-    std::any visitFunctioncall(LuaParser::FunctioncallContext * ctx) override;  
-    
+    MLIRGenerator(mlir::MLIRContext* context, AstContext* ast);
+
+    void gen();
     void dumpMLIR();
     void dumpIR();
 
 private:
-     mlir::Location loc(unsigned int line, unsigned int column) {
+
+    std::any visitBlock(LuaParser::BlockContext *ctx);
+    std::any visitFunctioncall(LuaParser::FunctioncallContext * ctx);  
+    std::any visitNameAndArgs(LuaParser::NameAndArgsContext* ctx);
+
+    mlir::Location loc(unsigned int line, unsigned int column) {
         return mlir::FileLineColLoc::get(builder.getStringAttr(""), line, column);
     }
 
@@ -50,9 +55,8 @@ private:
 private:
     mlir::OpBuilder builder;
     mlir::ModuleOp module;
-    
+    AstContext* ast;
     llvm::ScopedHashTable<llvm::StringRef, mlir::Value> symbolTable;
-
     llvm::StringMap<mlir::LLVM::LLVMFuncOp> functionMap;
 };
 

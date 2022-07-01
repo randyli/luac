@@ -1,12 +1,16 @@
 #include <antlr4-runtime.h>
 
 #include <iostream>
+#include <typeinfo>
 
 #include "LuaBaseListener.h"
 #include "LuaLexer.h"
 #include "LuaParser.h"
 #include "context.h"
 #include "mlir_generator.h"
+
+#include "ast.h"
+#include "sema.h"
 
 int main(int argc, char* argv[]) {
   auto context = luac::makeContext();
@@ -19,8 +23,8 @@ int main(int argc, char* argv[]) {
   luac::LuaParser parser(&tokens);
   //luac::MLIRGenerator generator(luac::Context::genMLIRContext().release());
   //parser.addParseListener(&generator);
-  auto ast = parser.chunk();
-  std::cout << ast->toStringTree(&parser, true) << std::endl;
+  auto chunk = parser.chunk();
+  std::cout << chunk->toStringTree(&parser, true) << std::endl;
   //generator.dumpMLIR();
   //generator.dumpIR();
   //std::cout << doc->toStringTree() << std::endl << std::endl;
@@ -28,10 +32,19 @@ int main(int argc, char* argv[]) {
   // antlr4::tree::ParseTree *tree = parser.keyedSimpleFieldName();
   // TreeShapeListener listener;
   // antlr4::tree::ParseTreeWalker::DEFAULT.walk(&listener, tree);
-  luac::MLIRGenerator generator(luac::Context::genMLIRContext().release());
+  //luac::MLIRGenerator generator(luac::Context::genMLIRContext().release());
 
-  generator.visitChunk(ast);
+  //generator.visitChunk(ast);
+  //generator.dumpMLIR();
+  //generator.dumpIR();
+  luac::Sema sema;
+  sema.visitChunk(chunk);
+  std::unique_ptr<luac::AstContext> ast = sema.Ast();
+  luac::MLIRGenerator generator(luac::Context::genMLIRContext().release(), ast.get());
+  generator.gen();
+  // generator.visitChunk(ast);
   generator.dumpMLIR();
   generator.dumpIR();
+
   return 0;
 }
