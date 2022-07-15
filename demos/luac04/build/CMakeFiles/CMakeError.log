@@ -1,0 +1,37 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_CLASS_MEMACCESS_FLAG failed with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d289d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d289d.dir/build.make CMakeFiles/cmTC_d289d.dir/build
+Building CXX object CMakeFiles/cmTC_d289d.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_CLASS_MEMACCESS_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wclass-memaccess -MD -MT CMakeFiles/cmTC_d289d.dir/src.cxx.o -MF CMakeFiles/cmTC_d289d.dir/src.cxx.o.d -o CMakeFiles/cmTC_d289d.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wclass-memaccess'; did you mean '-Wclass-varargs'? [-Wunknown-warning-option]
+1 warning generated.
+Linking CXX executable cmTC_d289d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d289d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d289d.dir/src.cxx.o -o cmTC_d289d 
+
+
+Source file was:
+int main() { return 0; }

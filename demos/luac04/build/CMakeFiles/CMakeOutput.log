@@ -1,0 +1,614 @@
+The system is: Darwin - 21.4.0 - arm64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is AppleClang, found in "/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/3.23.0-rc3/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is AppleClang, found in "/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/3.23.0-rc3/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_52857/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_52857.dir/build.make CMakeFiles/cmTC_52857.dir/build
+Building C object CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Apple clang version 13.1.6 (clang-1316.0.21.2.3)
+Target: arm64-apple-darwin21.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdebug-compilation-dir=/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.4.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include
+ /Library/Developer/CommandLineTools/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_52857
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52857.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -o cmTC_52857 
+Apple clang version 13.1.6 (clang-1316.0.21.2.3)
+Target: arm64-apple-darwin21.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_52857 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-762
+BUILD 12:49:08 Mar 30 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+    add: [/Library/Developer/CommandLineTools/usr/include]
+  end of search list found
+  collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+  collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+  implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_52857/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_52857.dir/build.make CMakeFiles/cmTC_52857.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c]
+  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
+  ignore line: [Target: arm64-apple-darwin21.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdebug-compilation-dir=/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.4.0]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_52857]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52857.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -o cmTC_52857 ]
+  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
+  ignore line: [Target: arm64-apple-darwin21.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_52857 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [arm64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [12.0.0] ==> ignore
+    arg [12.3] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_52857] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_52857.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c20f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c20f.dir/build.make CMakeFiles/cmTC_6c20f.dir/build
+Building CXX object CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+Apple clang version 13.1.6 (clang-1316.0.21.2.3)
+Target: arm64-apple-darwin21.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.4.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1
+ /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include
+ /Library/Developer/CommandLineTools/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking CXX executable cmTC_6c20f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c20f.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6c20f 
+Apple clang version 13.1.6 (clang-1316.0.21.2.3)
+Target: arm64-apple-darwin21.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_6c20f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-762
+BUILD 12:49:08 Mar 30 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
+    add: [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+    add: [/Library/Developer/CommandLineTools/usr/include]
+  end of search list found
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
+  collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+  collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+  implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c20f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c20f.dir/build.make CMakeFiles/cmTC_6c20f.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
+  ignore line: [Target: arm64-apple-darwin21.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.4.0]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_6c20f]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c20f.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6c20f ]
+  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
+  ignore line: [Target: arm64-apple-darwin21.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_6c20f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [arm64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [12.0.0] ==> ignore
+    arg [12.3] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_6c20f] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_6c20f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit objs: []
+  implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+
+
+Performing C SOURCE FILE Test Terminfo_LINKABLE succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_73ef1/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_73ef1.dir/build.make CMakeFiles/cmTC_73ef1.dir/build
+Building C object CMakeFiles/cmTC_73ef1.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DTerminfo_LINKABLE  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_73ef1.dir/src.c.o -MF CMakeFiles/cmTC_73ef1.dir/src.c.o.d -o CMakeFiles/cmTC_73ef1.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_73ef1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73ef1.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_73ef1.dir/src.c.o -o cmTC_73ef1  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libcurses.tbd 
+
+
+Source file was:
+
+    int setupterm(char *term, int filedes, int *errret);
+    int main() { return setupterm(0, 0, 0); }
+Performing C SOURCE FILE Test C_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f350c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f350c.dir/build.make CMakeFiles/cmTC_f350c.dir/build
+Building C object CMakeFiles/cmTC_f350c.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_SUPPORTS_FPIC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -fPIC -MD -MT CMakeFiles/cmTC_f350c.dir/src.c.o -MF CMakeFiles/cmTC_f350c.dir/src.c.o.d -o CMakeFiles/cmTC_f350c.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f350c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f350c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f350c.dir/src.c.o -o cmTC_f350c 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4adfe/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4adfe.dir/build.make CMakeFiles/cmTC_4adfe.dir/build
+Building CXX object CMakeFiles/cmTC_4adfe.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_FPIC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -fPIC -MD -MT CMakeFiles/cmTC_4adfe.dir/src.cxx.o -MF CMakeFiles/cmTC_4adfe.dir/src.cxx.o.d -o CMakeFiles/cmTC_4adfe.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4adfe
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4adfe.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4adfe.dir/src.cxx.o -o cmTC_4adfe 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3c35c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3c35c.dir/build.make CMakeFiles/cmTC_3c35c.dir/build
+Building CXX object CMakeFiles/cmTC_3c35c.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DSUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG  -fPIC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -fvisibility-inlines-hidden -MD -MT CMakeFiles/cmTC_3c35c.dir/src.cxx.o -MF CMakeFiles/cmTC_3c35c.dir/src.cxx.o.d -o CMakeFiles/cmTC_3c35c.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3c35c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c35c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3c35c.dir/src.cxx.o -o cmTC_3c35c 
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WERROR_DATE_TIME succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7a8bc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7a8bc.dir/build.make CMakeFiles/cmTC_7a8bc.dir/build
+Building C object CMakeFiles/cmTC_7a8bc.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_SUPPORTS_WERROR_DATE_TIME  -fPIC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Werror=date-time -MD -MT CMakeFiles/cmTC_7a8bc.dir/src.c.o -MF CMakeFiles/cmTC_7a8bc.dir/src.c.o.d -o CMakeFiles/cmTC_7a8bc.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7a8bc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a8bc.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7a8bc.dir/src.c.o -o cmTC_7a8bc 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_WERROR_DATE_TIME succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_91528/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_91528.dir/build.make CMakeFiles/cmTC_91528.dir/build
+Building CXX object CMakeFiles/cmTC_91528.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_WERROR_DATE_TIME  -fPIC -fvisibility-inlines-hidden  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Werror=date-time -MD -MT CMakeFiles/cmTC_91528.dir/src.cxx.o -MF CMakeFiles/cmTC_91528.dir/src.cxx.o.d -o CMakeFiles/cmTC_91528.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_91528
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91528.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_91528.dir/src.cxx.o -o cmTC_91528 
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_46657/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_46657.dir/build.make CMakeFiles/cmTC_46657.dir/build
+Building C object CMakeFiles/cmTC_46657.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW  -fPIC -Werror=date-time  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_46657.dir/src.c.o -MF CMakeFiles/cmTC_46657.dir/src.c.o.d -o CMakeFiles/cmTC_46657.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_46657
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46657.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC -Werror=date-time  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_46657.dir/src.c.o -o cmTC_46657 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f10ce/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f10ce.dir/build.make CMakeFiles/cmTC_f10ce.dir/build
+Building CXX object CMakeFiles/cmTC_f10ce.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW  -fPIC -fvisibility-inlines-hidden -Werror=date-time  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_f10ce.dir/src.cxx.o -MF CMakeFiles/cmTC_f10ce.dir/src.cxx.o.d -o CMakeFiles/cmTC_f10ce.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f10ce
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f10ce.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f10ce.dir/src.cxx.o -o cmTC_f10ce 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dea82/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dea82.dir/build.make CMakeFiles/cmTC_dea82.dir/build
+Building CXX object CMakeFiles/cmTC_dea82.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wmissing-field-initializers -MD -MT CMakeFiles/cmTC_dea82.dir/src.cxx.o -MF CMakeFiles/cmTC_dea82.dir/src.cxx.o.d -o CMakeFiles/cmTC_dea82.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dea82
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dea82.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dea82.dir/src.cxx.o -o cmTC_dea82 
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ed3c0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ed3c0.dir/build.make CMakeFiles/cmTC_ed3c0.dir/build
+Building C object CMakeFiles/cmTC_ed3c0.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wimplicit-fallthrough -MD -MT CMakeFiles/cmTC_ed3c0.dir/src.c.o -MF CMakeFiles/cmTC_ed3c0.dir/src.c.o.d -o CMakeFiles/cmTC_ed3c0.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ed3c0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed3c0.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ed3c0.dir/src.c.o -o cmTC_ed3c0 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_084a3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_084a3.dir/build.make CMakeFiles/cmTC_084a3.dir/build
+Building CXX object CMakeFiles/cmTC_084a3.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wimplicit-fallthrough -MD -MT CMakeFiles/cmTC_084a3.dir/src.cxx.o -MF CMakeFiles/cmTC_084a3.dir/src.cxx.o.d -o CMakeFiles/cmTC_084a3.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_084a3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_084a3.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_084a3.dir/src.cxx.o -o cmTC_084a3 
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9a01b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9a01b.dir/build.make CMakeFiles/cmTC_9a01b.dir/build
+Building C object CMakeFiles/cmTC_9a01b.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wcovered-switch-default -MD -MT CMakeFiles/cmTC_9a01b.dir/src.c.o -MF CMakeFiles/cmTC_9a01b.dir/src.c.o.d -o CMakeFiles/cmTC_9a01b.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9a01b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a01b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9a01b.dir/src.c.o -o cmTC_9a01b 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4d42b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4d42b.dir/build.make CMakeFiles/cmTC_4d42b.dir/build
+Building CXX object CMakeFiles/cmTC_4d42b.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wcovered-switch-default -MD -MT CMakeFiles/cmTC_4d42b.dir/src.cxx.o -MF CMakeFiles/cmTC_4d42b.dir/src.cxx.o.d -o CMakeFiles/cmTC_4d42b.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4d42b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d42b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4d42b.dir/src.cxx.o -o cmTC_4d42b 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b6eac/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b6eac.dir/build.make CMakeFiles/cmTC_b6eac.dir/build
+Building CXX object CMakeFiles/cmTC_b6eac.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_NOEXCEPT_TYPE_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wnoexcept-type -MD -MT CMakeFiles/cmTC_b6eac.dir/src.cxx.o -MF CMakeFiles/cmTC_b6eac.dir/src.cxx.o.d -o CMakeFiles/cmTC_b6eac.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b6eac
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6eac.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b6eac.dir/src.cxx.o -o cmTC_b6eac 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_484a3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_484a3.dir/build.make CMakeFiles/cmTC_484a3.dir/build
+Building CXX object CMakeFiles/cmTC_484a3.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type  -Werror=non-virtual-dtor -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_484a3.dir/src.cxx.o -MF CMakeFiles/cmTC_484a3.dir/src.cxx.o.d -o CMakeFiles/cmTC_484a3.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx:2:49: warning: unelaborated friend declaration is a C++11 extension; specify 'class' to befriend 'f' [-Wc++11-extensions]
+                             class base {friend f; public: virtual void anchor();protected: ~base();};
+                                                ^
+                                                class
+1 warning generated.
+Linking CXX executable cmTC_484a3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_484a3.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type  -Werror=non-virtual-dtor -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_484a3.dir/src.cxx.o -o cmTC_484a3 
+
+
+Source file was:
+class f {};
+                             class base {friend f; public: virtual void anchor();protected: ~base();};
+                             int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f119a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f119a.dir/build.make CMakeFiles/cmTC_f119a.dir/build
+Building CXX object CMakeFiles/cmTC_f119a.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wsuggest-override -MD -MT CMakeFiles/cmTC_f119a.dir/src.cxx.o -MF CMakeFiles/cmTC_f119a.dir/src.cxx.o.d -o CMakeFiles/cmTC_f119a.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f119a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f119a.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f119a.dir/src.cxx.o -o cmTC_f119a 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7cf13/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7cf13.dir/build.make CMakeFiles/cmTC_7cf13.dir/build
+Building CXX object CMakeFiles/cmTC_7cf13.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor  -Werror=suggest-override -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_7cf13.dir/src.cxx.o -MF CMakeFiles/cmTC_7cf13.dir/src.cxx.o.d -o CMakeFiles/cmTC_7cf13.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx:1:7: warning: 'base' has virtual functions but non-virtual destructor [-Wnon-virtual-dtor]
+class base {public: virtual void anchor();};
+      ^
+/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx:2:76: warning: 'final' keyword is a C++11 extension [-Wc++11-extensions]
+                               class derived : base {public: void anchor() final;};
+                                                                           ^
+/Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx:2:38: warning: 'derived' has virtual functions but non-virtual destructor [-Wnon-virtual-dtor]
+                               class derived : base {public: void anchor() final;};
+                                     ^
+3 warnings generated.
+Linking CXX executable cmTC_7cf13
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cf13.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor  -Werror=suggest-override -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7cf13.dir/src.cxx.o -o cmTC_7cf13 
+
+
+Source file was:
+class base {public: virtual void anchor();};
+                               class derived : base {public: void anchor() final;};
+                               int main() { return 0; }
+Performing C SOURCE FILE Test C_WCOMMENT_ALLOWS_LINE_WRAP succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_06775/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_06775.dir/build.make CMakeFiles/cmTC_06775.dir/build
+Building C object CMakeFiles/cmTC_06775.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_WCOMMENT_ALLOWS_LINE_WRAP  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -Werror -Wcomment -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_06775.dir/src.c.o -MF CMakeFiles/cmTC_06775.dir/src.c.o.d -o CMakeFiles/cmTC_06775.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_06775
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06775.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -Werror -Wcomment -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_06775.dir/src.c.o -o cmTC_06775 
+
+
+Source file was:
+// \
+//
+int main() {return 0;}
+Performing C SOURCE FILE Test C_SUPPORTS_STRING_CONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3b077/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3b077.dir/build.make CMakeFiles/cmTC_3b077.dir/build
+Building C object CMakeFiles/cmTC_3b077.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_SUPPORTS_STRING_CONVERSION_FLAG  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wstring-conversion -MD -MT CMakeFiles/cmTC_3b077.dir/src.c.o -MF CMakeFiles/cmTC_3b077.dir/src.c.o.d -o CMakeFiles/cmTC_3b077.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3b077
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b077.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3b077.dir/src.c.o -o cmTC_3b077 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_STRING_CONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_abff3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_abff3.dir/build.make CMakeFiles/cmTC_abff3.dir/build
+Building CXX object CMakeFiles/cmTC_abff3.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_STRING_CONVERSION_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wstring-conversion -MD -MT CMakeFiles/cmTC_abff3.dir/src.cxx.o -MF CMakeFiles/cmTC_abff3.dir/src.cxx.o.d -o CMakeFiles/cmTC_abff3.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_abff3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abff3.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_abff3.dir/src.cxx.o -o cmTC_abff3 
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_MISLEADING_INDENTATION_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d0a48/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d0a48.dir/build.make CMakeFiles/cmTC_d0a48.dir/build
+Building C object CMakeFiles/cmTC_d0a48.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DC_SUPPORTS_MISLEADING_INDENTATION_FLAG  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wmisleading-indentation -MD -MT CMakeFiles/cmTC_d0a48.dir/src.c.o -MF CMakeFiles/cmTC_d0a48.dir/src.c.o.d -o CMakeFiles/cmTC_d0a48.dir/src.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d0a48
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0a48.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d0a48.dir/src.c.o -o cmTC_d0a48 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_MISLEADING_INDENTATION_FLAG succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_42c13/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_42c13.dir/build.make CMakeFiles/cmTC_42c13.dir/build
+Building CXX object CMakeFiles/cmTC_42c13.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXX_SUPPORTS_MISLEADING_INDENTATION_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror -Wmisleading-indentation -MD -MT CMakeFiles/cmTC_42c13.dir/src.cxx.o -MF CMakeFiles/cmTC_42c13.dir/src.cxx.o.d -o CMakeFiles/cmTC_42c13.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_42c13
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42c13.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_42c13.dir/src.cxx.o -o cmTC_42c13 
+
+
+Source file was:
+int main() { return 0; }
+Determining if the os_signpost_interval_begin exist passed with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ddfa7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ddfa7.dir/build.make CMakeFiles/cmTC_ddfa7.dir/build
+Building C object CMakeFiles/cmTC_ddfa7.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fPIC  -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_ddfa7.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_ddfa7.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_ddfa7.dir/CheckSymbolExists.c.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ddfa7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddfa7.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -fPIC  -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ddfa7.dir/CheckSymbolExists.c.o -o cmTC_ddfa7 
+
+
+File /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <os/signpost.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef os_signpost_interval_begin
+  return ((int*)(&os_signpost_interval_begin))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test macos_signposts_usable succeeded with the following output:
+Change Dir: /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d9ffc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d9ffc.dir/build.make CMakeFiles/cmTC_d9ffc.dir/build
+Building CXX object CMakeFiles/cmTC_d9ffc.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -Dmacos_signposts_usable  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_d9ffc.dir/src.cxx.o -MF CMakeFiles/cmTC_d9ffc.dir/src.cxx.o.d -o CMakeFiles/cmTC_d9ffc.dir/src.cxx.o -c /Users/randyli/Documents/dev/luac/demos/luac04/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d9ffc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9ffc.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d9ffc.dir/src.cxx.o -o cmTC_d9ffc 
+
+
+Source file was:
+#include <os/signpost.h>
+    int main() { os_signpost_interval_begin(nullptr, 0, "", ""); return 0; }
