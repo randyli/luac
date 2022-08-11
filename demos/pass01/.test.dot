@@ -1,0 +1,12 @@
+digraph "CFG for 'test' function" {
+	label="CFG for 'test' function";
+
+	Node0x15163ad70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = icmp sgt i32 %0, %1\l  br i1 %3, label %4, label %6\l|{<s0>T|<s1>F}}"];
+	Node0x15163ad70:s0 -> Node0x15163aef0;
+	Node0x15163ad70:s1 -> Node0x15163b2a0;
+	Node0x15163aef0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%4:\l4:                                                \l  %5 = sub nsw i32 %0, %1\l  br label %8\l}"];
+	Node0x15163aef0 -> Node0x15163b260;
+	Node0x15163b2a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%6:\l6:                                                \l  %7 = sub nsw i32 %1, %0\l  br label %8\l}"];
+	Node0x15163b2a0 -> Node0x15163b260;
+	Node0x15163b260 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l8:                                                \l  %.0 = phi i32 [ %5, %4 ], [ %7, %6 ]\l  ret i32 %.0\l}"];
+}
